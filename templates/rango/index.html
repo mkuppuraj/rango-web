@@ -5,18 +5,17 @@
     </head>
 
     <body>
-        <h1>Rango says...hello world!</h1>
+        <h1>Welcome to Rango Catelog!</h1>
 
         {% if categories %}
             <ul>
                 {% for category in categories %}
-                <li>{{ category.name }}</li>
+                <li><a href="/rango/category/{{category.slug}}">{{ category.name }}</a></li>
                 {% endfor %}
             </ul>
         {% else %}
             <strong>There are no categories present.</strong>
         {% endif %}
-
-        <a href="/rango/about/">About</a>
+        <a href="/rango/add_category/">Add a New Category</a><br />
     </body>
 </html>
