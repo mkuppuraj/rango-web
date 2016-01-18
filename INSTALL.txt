@@ -1,0 +1,8 @@
+
+1. Install Python 2.7.x
+
+    yum install python==2.7.6
+
+2. Install Django 1.7.x
+
+    pip install -U django==1.7
